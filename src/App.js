@@ -10,9 +10,9 @@ function App() {
   console.log(breed)
   const newDog = async () => {
     setIsLoading(true)
-    let result = await axios.get("https://dog.ceo/api/breeds/image/random")
-    setIsLoading(false)
-    setBreed('')
+    let result = await axios.get("https://dog.ceo/api/breeds/image/random");
+    setIsLoading(false);
+    setBreed('');
     setRandomDog(result.data.message)
   }
 
